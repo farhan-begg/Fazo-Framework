@@ -14,45 +14,58 @@ body, html {
         
 }
 
+
 :root {
   --color: red;
   --primary-color: rgba(123, 37, 44, 0.7);
   --size: 121px;
-  --base-font-size: 16px;
+  --base-font-size: 15px;
   --large-font-size: 1.85em;
   --number-of-columns: 4;
   --golden-ratio: 1.618;
 }
 
+#headings > label {
+    font-size: calc(var(--base-font-size)*2);
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+#headings {
+    margin-top: 50px;
+}
 h1 {
   /* Available to all h1 and their descendants */
-  font-size: 10px;
+  font-size: calc(var(--base-font-size)*4.5);
 }
 h2 {
-    font-size: 15px;
+    font-size: calc(var(--base-font-size)*4)
 }
 
 h3{
-    font-size: 20px;
+    font-size: calc(var(--base-font-size)*3.5)
 }
 
 h4{
-    font-size: 25px;
+    font-size: calc(var(--base-font-size)*3);
 
 }
 
 h5{
-    font-size: 30px;
-
+    font-size: calc(var(--base-font-size)*2.5)
 }
 
 h6{
-    font-size: 35px;
+    font-size: calc(var(--base-font-size)*2)
+
 
 }
 
 .title {
-    font-size: 30px;
+    font-size: 20px;
+    color: purple;
+    margin: 10px;
+
 }
 
 
@@ -273,16 +286,35 @@ button {
   }
 
   .navbar{
-    background-color: #333;
-    overflow: hidden;
     
+    display:flex;
+   justify-content: space-between;
+    align-items: baseline;
+    width: 1000px;
+    padding-left: 1em;
+    font-size: 15px;
+    border-radius: 10px;
+    border-radius: 0px 0px 0px 7px;
+    background: #466368;
+    background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
   }
 
-  .navbar .title {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .navbar > ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      align-items: baseline;
+  }
+
+  .navbar a {
+      display: inline-block;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+
+  }
+
+  .navbar a:hover{
+      color: yellow;
   }

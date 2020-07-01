@@ -75,23 +75,6 @@ li {
   /* display: inline; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 button {
     --bg-color: #fff;
     --fg-color: black;
@@ -103,6 +86,7 @@ button {
     border-radius: 0.5em;
     font-size: 1em;
     transition: 300ms;
+    cursor: pointer;
   }
   
   button:hover {
@@ -112,119 +96,73 @@ button {
 
 
   button.btn-primary{
-      background-color: lightblue;
-      color: white;
-      cursor: pointer;
+    --bg-color: lightblue;
+    --fg-color: white;
+  
   }
 
-  button.btn-primary:hover{
-      background-color: white;
-      color: lightblue;
-      cursor: pointer;
-
-  }
 
   button.btn-secondary{
-      background-color: rgba(169, 169, 169);
-      color: white;
-      cursor: pointer;
+    --bg-color:rgba(169, 169, 169);
+    --fg-color: white;
   }
 
-  button.btn-secondary:hover{
-      background-color: white;
-      color: rgba(169, 169, 169);
-      cursor: pointer;
-  }
+
 
   button.btn-success{
-      background-color: rgba(131, 245, 44);
-      color: white;
-      cursor: pointer;
+    --bg-color: rgba(131, 245, 44);
+    --fg-color: white;
+
 
   }
 
-  button.btn-success:hover{
-      background-color: white;
-      color: rgba(131, 245, 44);
-      cursor: pointer;
-  }
+
 
   button.btn-danger{
-      background-color: rgba(255, 0, 0, 0.6);
-      color: white;
-      cursor: pointer;
+    --bg-color: rgba(255, 0, 0, 0.6);
+    --fg-color: white;
+
   }
 
-  button.btn-danger:hover{
-      background-color: white;
-      color: rgba(255, 0, 0);
-      cursor: pointer;
-  }
 
   button.btn-warning{
-    background-color:#FFCC00;
-    color: white;
-    cursor: pointer;
-
+    --bg-color:#FFCC00;
+    --fg-color: white;
   }
 
 
   button.btn-warning:hover{
-      background-color: white;
-      color: #FFCC00;
-      cursor: pointer;
+    --bg-color: white;
+      --fg-color: #FFCC00;
 
   }
   button.btn-info{
-      background-color: turquoise;
-      color: white;
-      cursor: pointer;
-  }
+    --bg-color: turquoise;
+      --fg-color: white;
 
-  button.btn-info:hover{
-      color: turquoise;
-      background-color: white;
-      cursor: pointer;
   }
 
   button.btn-light{
-    background-color: white;
-    color: black;
-    cursor: pointer;
+    --bg-color: white;
+    --fg-color: black;
   }
 
-  button.btn-light:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    cursor: pointer;
-  }
+
 
   button.btn-dark{
-      background-color: black;
-      color: white;
-      cursor: pointer;
+    --bg-color: black;
+    --fg-color: white;
 
   }
-/* 
-  button.btn-dark:hover{
-      background-color: white;
-      color: black;
-      cursor: pointer;
-
-  } */
 
   button.btn-link{
     text-decoration: none;
-    background-color: cadetblue;
-    color: white;
-    cursor: pointer;
+    --bg-color: cadetblue;
+    --fg-color: white;
 
   }
 
-  button.btn-link:hover{
-      text-decoration: underline;
-      cursor: pointer;
-  }
+
 
   
 
